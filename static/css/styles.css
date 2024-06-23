@@ -1,0 +1,89 @@
+body {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  max-height: 400px;
+}
+
+.responsive-image {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.download-btn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+
+.image-container:hover .download-btn {
+  display: block;
+}
+
+#drop-area {
+  position: relative;
+}
+
+#drop-area.highlight {
+  background-color: #e9ecef;
+}
+
+.btn-transform {
+  width: 100%;
+}

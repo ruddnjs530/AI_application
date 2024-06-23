@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Display Image</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-title">Transformed Image</div>
+      <div class="image-container">
+        <img src="{{ fake_image_url }}" alt="Transformed Image" class="responsive-image transformed">
+        <a href="{{ fake_image_url }}" download="transformed_image.jpg" class="download-btn">Download</a>
+      </div>
+      <div class="card-title">Original Image</div>
+      <div class="image-container">
+        <img src="{{ original_image_url }}" alt="Original Image" class="responsive-image original">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
